@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Your Website{% endblock %}
+
+{% block header %}Welcome to Your Website{% endblock %}
+
+{% block content %}
+    <p>This is the home page content.</p>
+    {% for task in Task%}
+    {{task.title}}
+    {%endfor%}
+{% endblock %}
